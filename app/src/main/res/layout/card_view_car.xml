@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="10dp"
+    app:cardCornerRadius="10dp"
+    app:cardUseCompatPadding="true">
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <ImageView
+           android:id="@+id/imageView"
+           android:layout_width="match_parent"
+           android:layout_height="110dp"
+           android:scaleType="centerCrop"
+           android:src="@drawable/i4"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent" />
+
+       <TextView
+           android:id="@+id/tv_model"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:padding="12dp"
+           android:text="TextView"
+           android:textSize="20sp"
+           android:textStyle="bold"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+       <TextView
+           android:id="@+id/tv_color"
+           android:layout_width="250dp"
+           android:layout_height="wrap_content"
+           android:drawableLeft="@drawable/color_img"
+           android:drawablePadding="16dp"
+           android:padding="12dp"
+           android:text="TextView"
+           android:textSize="18sp"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/tv_model" />
+
+       <TextView
+           android:id="@+id/tv_dpl"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+
+           android:drawableLeft="@drawable/station_img"
+           android:drawablePadding="16dp"
+           android:padding="12dp"
+           android:text="TextView"
+           android:textSize="16sp"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/tv_color" />
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
